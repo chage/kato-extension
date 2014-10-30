@@ -12,4 +12,8 @@
 	$('.roster-forums li, .roster-orgs li').click(function() {
 		checkRooms();
 	});
+	// delegate event
+	$('#org_view').on('click', '.room-textarea', function() {
+		checkRooms();
+	});
 })();
